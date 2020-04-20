@@ -1,12 +1,15 @@
 {
   "license": "MIT",
   "scripts": {
-    "test": "node index.js"
+    "test": "node -r @babel/register index.js"
   },
   "dependencies": {
     "ringcentral-typescript": "^0.3.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/register": "^7.9.0",
     "standard": "^14.3.3",
     "yarn-upgrade-all": "^0.5.2"
   }

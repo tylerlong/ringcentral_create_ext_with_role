@@ -1,4 +1,4 @@
-const RestClient = require('ringcentral-typescript').default
+import RestClient from 'ringcentral-typescript'
 
 ;(async () => {
   const rc = new RestClient(process.env.RINGCENTRAL_CLIENT_ID, process.env.RINGCENTRAL_CLIENT_SECRET, process.env.RINGCENTRAL_SERVER_URL)
